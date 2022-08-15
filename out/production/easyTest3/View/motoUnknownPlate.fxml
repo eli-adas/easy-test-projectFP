@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1a237e#1a237e;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MotoUnknownPlate">
+   <children>
+      <Pane layoutX="52.0" layoutY="34.0" prefHeight="281.0" prefWidth="412.0" style="-fx-background-color: #283593 #283593; -fx-background-radius: 30;">
+         <children>
+            <ComboBox fx:id="idMarca" layoutX="219.0" layoutY="63.0" prefWidth="150.0" />
+            <ComboBox fx:id="idCilindrada" layoutX="219.0" layoutY="105.0" prefWidth="150.0" />
+            <ComboBox fx:id="idModelo" layoutX="219.0" layoutY="152.0" prefWidth="150.0" />
+            <DatePicker fx:id="idFechaMatriculac" layoutX="219.0" layoutY="22.0" prefHeight="19.0" prefWidth="150.0" />
+            <Label layoutX="53.0" layoutY="28.0" prefHeight="19.0" prefWidth="120.0" text="Fecha Matriculación" textFill="#fcf8f8" />
+            <Label layoutX="58.0" layoutY="66.0" prefHeight="19.0" prefWidth="110.0" text="Marca de vehiculo" textFill="#fcf7f7" />
+            <Label layoutX="69.0" layoutY="108.0" prefHeight="25.0" prefWidth="120.0" text="Cilindrada" textFill="#fcf7f7" />
+            <Label layoutX="69.0" layoutY="152.0" prefHeight="25.0" prefWidth="120.0" text="Modelo" textFill="#fcf7f7" />
+            <TableView fx:id="idTableView" layoutX="-10.0" layoutY="196.0" prefHeight="157.0" prefWidth="520.0" />
+         </children>
+      </Pane>
+      <Button fx:id="idContinuar" layoutX="502.0" layoutY="122.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Continuar" />
+      <Button fx:id="idRefresh" layoutX="499.0" layoutY="76.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="84.0" text="Refresca" />
+   </children>
+</AnchorPane>
